@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio — Lundu Adrian Pratama Nababan</title>
+    <style>
+      :root {
+        --bg: #0f1724;
+        --card: #0b1220;
+        --muted: #9aa4b2;
+        --accent: #6ee7b7;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+        background: linear-gradient(180deg, #071126 0%, #071228 100%);
+        color: #e6eef6;
+        line-height: 1.5;
+      }
+      .container {
+        max-width: 980px;
+        margin: 36px auto;
+        padding: 28px;
+      }
+      header {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      .avatar {
+        width: 112px;
+        height: 112px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--accent) 0%, #60a5fa 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: #04202b;
+        font-size: 28px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 28px;
+      }
+      p.lead {
+        color: var(--muted);
+        margin: 6px 0 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 340px;
+        gap: 22px;
+        margin-top: 26px;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.02);
+        padding: 18px;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+      }
+      .section-title {
+        font-size: 14px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
+      ul.skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      ul.skill-list li {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 8px 10px;
+        border-radius: 8px;
+        font-size: 13px;
+        color: #dcebf5;
+      }
+      .project {
+        border-left: 3px solid rgba(255, 255, 255, 0.03);
+        padding: 10px 12px;
+        margin-bottom: 12px;
+      }
+      .project h4 {
+        margin: 0 0 6px;
+      }
+      .meta {
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .contact a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      footer {
+        margin-top: 20px;
+        color: var(--muted);
+        font-size: 13px;
+        text-align: center;
+      }
+      @media (max-width: 880px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .avatar {
+          width: 84px;
+          height: 84px;
+          font-size: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="avatar">LA</div>
+        <div>
+          <h1>Lundu Adrian Pratama Nababan</h1>
+          <p class="lead">
+            Mahasiswa Sistem Informasi • Pengembang Web & Pengelola Proyek IT •
+            Fokus: solusi web berbasis Python, sistem informasi, dan
+            marketplace.
+          </p>
+          <div style="margin-top: 10px; color: var(--muted)">
+            Email:
+            <a href="mailto:pratamadraian@gmail.com" class="contact"
+              >pratamadraian@gmail.com</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <div class="grid">
+        <main>
+          <section class="card">
+            <div class="section-title">Tentang Saya</div>
+            <p>
+              Halo — saya Lundu, mahasiswa jurusan Sistem Informasi yang
+              bersemangat membangun aplikasi web yang berguna untuk masyarakat
+              dan bisnis. Saya memiliki pengalaman mengembangkan prototipe
+              marketplace, website penyedia jasa (fotografi), dan sistem
+              informasi pemantauan berbasis web. Saya nyaman bekerja dengan
+              Python (Django/Flask), JavaScript, dan database relasional.
+            </p>
+          </section>
+
+          <section class="card" style="margin-top: 16px">
+            <div class="section-title">Proyek Unggulan</div>
+
+            <div class="project">
+              <h4>1) Marketplace Tanaman Hias (Proyek Pribadi)</h4>
+              <div class="meta">
+                Peran: Fullstack • Teknologi: Django, PostgreSQL, Bootstrap
+              </div>
+              <p>
+                Marketplace untuk penjual dan pembeli tanaman hias: katalog
+                produk, keranjang, dan dashboard penjual. Fitur utama: manajemen
+                produk, pencarian, dan notifikasi pesanan.
+              </p>
+            </div>
+
+            <div class="project">
+              <h4>2) Website Jasa Fotografer (Tugas/Klien)</h4>
+              <div class="meta">
+                Peran: Backend Developer • Teknologi: Flask, SQLite, HTML/CSS
+              </div>
+              <p>
+                Website portofolio dan pemesanan jasa fotografi dengan halaman
+                galeri, formulir pemesanan, dan sistem manajemen konten
+                sederhana untuk admin.
+              </p>
+            </div>
+
+            <div class="project">
+              <h4>3) Sistem Informasi Pemantauan Stunting (Tugas Akhir)</h4>
+              <div class="meta">
+                Peran: Analis & Pengembang • Teknologi: Django, Chart.js
+              </div>
+              <p>
+                Sistem berbasis web untuk mencatat data balita, memantau
+                indikator stunting, dan menghasilkan laporan untuk pemangku
+                kepentingan desa. Menyediakan dasbor visual dan fitur ekspor
+                laporan.
+              </p>
+            </div>
+
+            <div class="project">
+              <h4>4) Proyek Lainnya / Eksperimen</h4>
+              <div class="meta">AI & Data • Tools: Python, Pandas</div>
+              <p>
+                Eksperimen kecil: analisis data sederhana menggunakan Python
+                untuk insights pengguna dan rekomendasi produk.
+              </p>
+            </div>
+          </section>
+
+          <section class="card" style="margin-top: 16px">
+            <div class="section-title">Pendidikan</div>
+            <p>
+              <strong>Sarjana (Berjalan)</strong> — Sistem Informasi,
+              Universitas (sedang menempuh semester 6). Fokus: pengembangan
+              sistem informasi dan manajemen proyek IT.
+            </p>
+          </section>
+        </main>
+
+        <aside>
+          <div class="card">
+            <div class="section-title">Keahlian</div>
+            <ul class="skill-list">
+              <li>Python (Django/Flask)</li>
+              <li>HTML & CSS</li>
+              <li>JavaScript (vanilla)</li>
+              <li>SQL (PostgreSQL, SQLite)</li>
+              <li>REST API</li>
+              <li>Git & GitHub</li>
+              <li>Analisis Sistem</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top: 16px">
+            <div class="section-title">Sertifikat & Kursus</div>
+            <p class="meta">
+              Contoh: Pemrograman Web Python, Dasar SQL, Workshop UI/UX (jika
+              ada, cantumkan nama & tahun).
+            </p>
+          </div>
+
+          <div class="card" style="margin-top: 16px">
+            <div class="section-title">Kontak & Link</div>
+            <p class="meta">
+              Email:
+              <a href="mailto:pratamadraian@gmail.com" class="contact"
+                >pratamadraian@gmail.com</a
+              >
+            </p>
+            <p class="meta">GitHub: <em>tambahkan username GitHub Anda</em></p>
+            <p class="meta">
+              LinkedIn: <em>tambahkan profil LinkedIn jika ada</em>
+            </p>
+          </div>
+
+          <div class="card" style="margin-top: 16px">
+            <div class="section-title">Bahasa</div>
+            <ul style="margin: 0; padding: 0; list-style: none; color: #dcebf5">
+              <li>Bahasa Indonesia — Fasih</li>
+              <li>Bahasa Inggris — Menengah</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <div>
+          Portofolio dibuat otomatis — ingin ditingkatkan atau diekspor ke
+          PDF/halaman GitHub? Beri tahu saya detail tambahan (foto, link GitHub,
+          deskripsi proyek lengkap).
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
